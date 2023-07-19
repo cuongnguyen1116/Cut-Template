@@ -1,0 +1,16 @@
+@mixin customizeText(
+  $f-size: initial,
+  $f-weight: initial,
+  $f-lineheight: initial,
+  $color: initial
+) {
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $f-lineheight;
+  color: $color;
+}
+
+@mixin size($height, $width: $height) {
+  height: $height;
+  width: $width;
+}
