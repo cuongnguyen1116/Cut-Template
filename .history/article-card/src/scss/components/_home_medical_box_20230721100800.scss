@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.box {
+  background-color: white;
+  @include absoluteCenter("both");
+  height: 300px;
+  width: 660px;
+
+  &__top {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+
+    &-title {
+      @include customizeText(18px, 700, initial, #236c62);
+      bottom: 0;
+    }
+  }
+}

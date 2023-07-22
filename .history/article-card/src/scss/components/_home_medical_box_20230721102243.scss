@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.box {
+  background-color: white;
+  @include absoluteCenter("both");
+  height: 300px;
+  width: 660px;
+
+  &__top {
+    display: flex;
+    margin: 15px 15px 0 15px;
+
+    &-title {
+      @include customizeText(18px, 700, initial, #236c62);
+      margin-top: auto;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin: 18px 0 0 18px;
+
+    &--left,
+    &--right {
+      margin-left: 18px;
+    }
+
+    &--left {
+      width: 304px;
+      height: 171px;
+    }
+
+    &_
+  }
+}

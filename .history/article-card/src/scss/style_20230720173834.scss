@@ -1,0 +1,9 @@
+@import "./reset";
+@import "./fonts";
+@import "./mixins";
+
+@use "./components/adx_card.scss";
+
+body {
+  background-color: black;
+}

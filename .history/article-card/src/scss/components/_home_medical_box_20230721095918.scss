@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.box {
+  background-color: white;
+  @include absoluteCenter("both");
+  height: 300px;
+  width: 660px;
+
+  &__top {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}

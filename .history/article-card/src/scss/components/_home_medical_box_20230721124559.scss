@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+.box {
+  background-color: white;
+  @include absoluteCenter("both");
+  height: 300px;
+  width: 660px;
+
+  &__top {
+    display: flex;
+    margin: 15px 15px 0 15px;
+
+    &-title {
+      @include customizeText(18px, 700, initial, #236c62);
+      margin-top: auto;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: 18px;
+
+    &--left,
+    &--right {
+      margin-left: 18px;
+    }
+
+    &--right {
+      display: flex;
+    }
+
+    &--left {
+      width: 304px;
+      height: 171px;
+    }
+  }
+
+  &__info--left {
+    margin-right: 15px;
+    img {
+      object-fit: contain;
+      @include size(123px);
+    }
+  }
+
+  &__info--right {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 82px;
+      height: 30px;
+    }
+  }
+}
