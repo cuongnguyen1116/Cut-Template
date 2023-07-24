@@ -3,13 +3,13 @@
 @use "./mixins" as *;
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .box {
   background-color: white;
   height: 300px;
-  width: 660px;
+  width: 700px;
   margin: auto;
   margin-top: 10px;
   &__top {
@@ -26,8 +26,7 @@ body {
     display: flex;
     margin-top: 18px;
 
-    &--left,
-    &--right {
+    &--left {
       margin-left: 18px;
     }
 
@@ -125,4 +124,10 @@ body {
       @include customizeText(10px, 800, 12px, #fff);
     }
   }
+}
+
+.swiper-wrapper {
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
 }

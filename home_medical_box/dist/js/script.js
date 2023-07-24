@@ -1,2 +1,2 @@
-$(document).ready((function(){$(".info-slider").slick({arrows:!1,dots:!0})}));
+var swiper=new Swiper(".slide-content",{autoplay:{delay:2500,disableOnInteraction:!1},slidesPerView:1,spaceBetween:0,updateOnWindowResize:!0,loop:!0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
 //# sourceMappingURL=script.js.map
